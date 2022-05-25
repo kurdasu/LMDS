@@ -446,7 +446,7 @@ if [ $exitstatus = 0 ]
 			cat > .templates/peer2profit/service.yml <<EOF
   peer2profit01:
     container_name: peer2profit01
-    image: peer2profit/peer2profit_x86_64:latest
+    image: peer2profit/peer2profit_linux:latest
     environment:
       P2P_EMAIL: ${peeremail}
     restart: unless-stopped
